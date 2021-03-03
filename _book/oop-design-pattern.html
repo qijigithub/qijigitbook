@@ -1,0 +1,441 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Oop Design Pattern · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="untitled.html" />
+    
+    
+    <link rel="prev" href="drafts.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" >
+            
+                <span>
+            
+                    
+                    Book
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="_book/data-structure-review-in-java.md">
+            
+                <span>
+            
+                    
+                    Data Structure Review In Java
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="_book/untitled.md">
+            
+                <span>
+            
+                    
+                    Untitled
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="csc-447-review.html">
+            
+                <a href="csc-447-review.html">
+            
+                    
+                    Csc 447 Review
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="data-structure-review-in-java.html">
+            
+                <a href="data-structure-review-in-java.html">
+            
+                    
+                    Data Structure Review In Java
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="drafts.html">
+            
+                <a href="drafts.html">
+            
+                    
+                    Drafts
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.6" data-path="oop-design-pattern.html">
+            
+                <a href="oop-design-pattern.html">
+            
+                    
+                    Oop Design Pattern
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="untitled.html">
+            
+                <a href="untitled.html">
+            
+                    
+                    Untitled
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >Oop Design Pattern</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="oop-design-pattern">OOP design pattern</h1>
+<h2 id="design-pattern-implementation-documents">Design Pattern Implementation Documents</h2>
+<h3 id="brief-project-summary">Brief Project Summary</h3>
+<p>My project catalogs Six Patterns: Strategy Pattern, Decorator Pattern, Observer Pattern, Command Pattern, Adapter Pattern, and Fa&#xE7;ade Pattern. I choose to different application to each explain each pattern. The coding software is IntelliJ.</p>
+<h3 id="1strategy-pattern-behavioral-pattern">1.Strategy pattern: behavioral Pattern</h3>
+<h4 id="explanation-of-problem-and-solution">Explanation of problem and solution</h4>
+<p>At the begging, I want to write a program to plan travel for travelers. The Destination and the transportation are the first thing I need to consider about. Thus I write an abstract class called &#x201C;traveler&#x201D; which has the functions for setting destination and transportation so that different traveler could inherit this class.</p>
+<p>However, I found different traveler has different destination. If I have 10 travel, 5 of them want to go 2 different destinations, I have to override that function 5 at least five times. So I need a solution which could make the destination interchangeable. I figured out Strategy Pattern: Using if in the situation that one problem is able to be solved by multiple similar algorithms. Here is my solution: I take the destination function out of Traveler class, and the strategy of each destination implemented destination interface are packaged into a single class and replaced arbitrarily when context(traveler) change.</p>
+<p>Meanwhile, the transportation and the choices of partner have same problem with Destination. To be specific, Travelers may choose different transportation to go destination and they may want family members or friends to go travel with, even travel alone. Thus, same idea also be implemented in Transportation interface and Partner interface.</p>
+<h4 id="project-folder-that-contains-the-code">Project folder that contains the code</h4>
+<p>List of Java file for Strategy pattern:</p>
+<p>(strategy)Transportation interface.java, train.java, plane.java, car.java (strategy)Destination interface.java, Japan. Java, NewYork.java, (strategy)Partner interface.java, Alone.java, WithFamily.java, (context)Traveler abstract class.java, Peter.java, Mary.java (main function) strategydemo.java</p>
+<h4 id="implementation-document-and-explanation">Implementation document and explanation</h4>
+<p>Run strategydemo.java document:</p>
+<p>Traveler Peter will go travel alone and take airplane, the destination is Japan. Traveler Mary will go travel with family member by driving car, the destination is New York. Traveler Peter also go travel to New York and this time, he goes with his family by train.</p>
+<h3 id="2observer-pattern&#xFF1A;behavioral-pattern">2.Observer pattern&#xFF1A;behavioral Pattern</h3>
+<h4 id="explanation-of-problem-and-solution">Explanation of problem and solution</h4>
+<p>We get some information about some subject, I want to broadcast to every Observer followed me. I just use Observer and Subject to be the class name. I thought it is easier to catch the point. Wrong code:</p>
+<pre><code class="lang-text">public class BadObserver {
+        public void getchanged() {
+            info1 = getInfo1();
+            info2 = getInfo2();
+Observer1.update(info1, info2);
+Observer1.display(info1, info2);
+Observer2.update(info1, info2): data1;
+Observer2.display(data1);
+Observer3.update(info1, info2): data2;
+Observer3.display(data2);    
+}
+</code></pre>
+<p>This code just finished the basic function, which is Notify Observer once subject get check. However, if we write code in this way, we cannot add observer when program start running. And One class has not only one responsibility, violating single responsibility principle. they all have an update() method takes the info1 and info, too much needless repetitions appears. To solve the problem, we could separate informer and observer and encapsulate what changes to make code easier to change. Also, allowing multiple Observers and Subject, notifying all observers when subject get changes, that functions reduce the dependent relationship and connect them for as long as needed.</p>
+<h4 id="project-folder-that-contains-the-code">Project folder that contains the code</h4>
+<p>List of Java file for Observer pattern: (Subject)Subject interface.java, subject1.java (Observer)Observer interface.java, Observer1.java, Observer2.java, Observer3.java (main function) ObserverDemo.java</p>
+<h4 id="implementation-document-and-explanation">Implementation document and explanation</h4>
+<p>Run ObserverDemo.java document: Subject1 will be create and Observer1, Observer 2 and Observer 3 add themselves to Subject ArrayList. Once Subject1 set a change, it will notify all Observer in the Observer ArrayList. Each Observer will receive the update information and print it in their own way.</p>
+<h3 id="3decorator-pattern&#xFF1A;structural-pattern">3.Decorator pattern&#xFF1A;Structural Pattern</h3>
+<h4 id="explanation-of-problem-and-solution">Explanation of problem and solution</h4>
+<p>Every time we play game, we know that the characters in game, besides the basic body, may have different custom, weapons and skills so that there are multiple characters with littler change. Wrong code:</p>
+<pre><code class="lang-text">Public abstract class Character {
+    Private String description;
+    Public abstract getDescription(){Return description;}
+ }
+public class Man extends Character{}
+public class Woman extends Character{}
+public class WomanwithFancyCustom extends Character{}
+public class MenwithFancyCustom extends Character{}
+public class MenwithFancyCustomandAK47 extends Character{}
+public class MenwithNormalCustomandAK47 extends Character{}
+&#x2026;.
+</code></pre>
+<p>I could write thousands of the class&#x2026; and if I add one new skills, I should write all the combination of skill and character again, that is very inefficient way to develop and one class may more than one responsibility. Second, if one of the custom change, all subclass will be change, violating open closed principle. That make the program is hard to maintain. Thus, I use decorator pattern to deal with it. The point that we can put the custom, weapon and skill as the decorator, attaching other responsibility to the object dynamically.</p>
+<h4 id="project-folder-that-contains-the-code">Project folder that contains the code</h4>
+<p>List of Java file for Decorator pattern: (Character)Woman.java, Man.java (Decorator)Decorator abstract class.java, CustomDec.java, WeaponDec.java, SkillDec.java (main function) DecoratorDemo.java</p>
+<h4 id="implementation-document-and-explanation">Implementation document and explanation</h4>
+<p>Run DecoratorDemo.java The basic character are man and woman,but the basic character could be add the function from from CustomDec, WeaponDec, and SkillDec class respectively. The prerequisite is decorator implements the same interface or abstract class as the Character they are going to decorate.</p>
+<h3 id="4command-pattern&#xFF1A;behavioral-pattern">4.Command pattern&#xFF1A;behavioral Pattern</h3>
+<h4 id="explanation-of-problem-and-solution">Explanation of problem and solution</h4>
+<p>This time, I want to make a Car remote controller. The functions contained are lightOn(), lightOff(), and DoorOpen().</p>
+<p>Wrong code:</p>
+<pre><code class="lang-text">Public Class RemoteController{
+If (slot1==light){
+lightOn();}
+else(slot1==Door) {doorOpen();}
+}
+</code></pre>
+<p>In this software system, behavior requesters and behavior implementers are usually a tightly coupled relationship. However, in some cases, such as the need to change remote controller, light or door, this type of incompatibility cannot be resisted. Coupling design is not suitable. At this situation, the decoupling is a good way to thinking. So the command pattern could be implement decoupling process. The idea is that creating an invoker invokes the receiver through the command, in the order: invoker &#x2192; command&#x2192; receiver.</p>
+<h4 id="project-folder-that-contains-the-code">Project folder that contains the code</h4>
+<p>List of Java file for Command pattern</p>
+<p>(Invoker)RemoteController.java (Command) CarlightOnCommand.java, CarlightOffCommand.java, CardoorOpenCommand.java (receiver)Cardoor.java, Carlight.java (main function) CommandDemo.java</p>
+<h4 id="implementation-document-and-explanation">Implementation document and explanation</h4>
+<p>Run CommandDemo.java document</p>
+<p>After Remote controller button pressed, the command start execute, it will call receiver to action.</p>
+<h3 id="5-adapter-pattern&#xFF1A;structural-pattern">5. Adapter pattern&#xFF1A;Structural Pattern</h3>
+<h4 id="explanation-of-problem-and-solution">Explanation of problem and solution</h4>
+<p>The main solution is to often put some &quot;objects&quot; into the new environment in the software system, and the interfaces required by the new environment are not satisfied by current objects. The adapter pattern convert &#x201C;new object&#x201D; the customer wants so that it possible for those classes that originally could not work together due to incompatible interfaces.</p>
+<h4 id="project-folder-that-contains-the-code">Project folder that contains the code</h4>
+<p>List of Java file for adapter pattern</p>
+<p>(Target) ChinaVolt.java, CWallOutlet.java (Adaptee)AmericVolt.java, AmericaLaptop.java (adapter)Voltadapter.java (main function) AdapterDemo.java</p>
+<h4 id="implementation-document-and-explanation">Implementation document and explanation</h4>
+<p>Run Adapter.java America Laptop volt is 110v, And China Wall Outlet volt is 220v. If you want to use China outlet, you have to use VoltAdapter, which transform 110v to 220v, thus it matches now.</p>
+<h3 id="6-facade-pattern&#xFF1A;structural-pattern">6. Facade pattern&#xFF1A;Structural Pattern</h3>
+<h4 id="explanation-of-problem-and-solution">Explanation of problem and solution</h4>
+<p>To illustrate the facade pattern, let&#x2019;s try to look into a small example. When I want to play game. There are several things I have to do: 1 turn on the TV, 2 tuner to HDMI mode channel, 3 turn on the xbox 4connect controller 5 dim the light 6 turn on the projector 6 load the game. Wrong code:</p>
+<pre><code class="lang-text">Public static void main(String args[]){
+TV.turnOn()
+TV.HTMImode()
+Xbox.turnOn()
+Xbox.connectCtroller()
+Light.dim()
+Projecter. On()
+Xbox.loadGame()
+}
+</code></pre>
+<p>All that things should be done manually, whereas Fa&#xE7;ade pattern provides a combination for a set of interfaces in the subsystem and defines a high-level interface that makes this subsystem easier to use.</p>
+<h4 id="project-folder-that-contains-the-code">Project folder that contains the code</h4>
+<p>List of Java file for Facade pattern: (Facade)GameFacade.java (Subsystem) TV.java, Xbox.java.projector.java, light.java (main function) Fa&#xE7;adeDemo.java</p>
+<h4 id="implementation-document-and-explanation">Implementation document and explanation</h4>
+<p>Run FacadeDemo.java Fa&#xE7;ade will help you start game mode. The client does not need to know the complex link within the system. The entire system only needs to provide a &quot;Fa&#xE7;ade Pattern&quot;.1 turn on the TV, 2 switch to HDMI mode channel, 3 turn on the xbox 4connect controller 5 dim the light 6 turn on the projector 6 load the game. And when you don&#x2019;t want to play anymore. The program will help you close all of System.</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="drafts.html" class="navigation navigation-prev " aria-label="Previous page: Drafts">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="untitled.html" class="navigation navigation-next " aria-label="Next page: Untitled">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Oop Design Pattern","level":"1.6","depth":1,"next":{"title":"Untitled","level":"1.7","depth":1,"path":"untitled.md","ref":"untitled.md","articles":[]},"previous":{"title":"Drafts","level":"1.5","depth":1,"path":"drafts.md","ref":"drafts.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"oop-design-pattern.md","mtime":"2021-03-03T04:30:09.441Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-03-03T04:33:29.453Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
